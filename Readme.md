@@ -64,7 +64,9 @@ rm -rf output/images/Image output/images/vmlinux  # Clean the output images dire
 make linux-menuconfig
 # In the menuconfig, navigate to:
 #   Kernel hacking -> Kernel debugging (Enable it)
-# Double check the config file in `output/build/linux-6.*/.config` to ensure the following options are set:
+
+
+# Also, double check the config file in `output/build/linux-6.*/.config` to ensure the following options are set:
 #   CONFIG_DEBUG_INFO_NONE=n
 #   CONFIG_DEBUG_INFO_DWARF_TOOLCHAIN_DEFAULT=y
 #   CONFIG_DEBUG_INFO=y
