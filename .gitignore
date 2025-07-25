@@ -1,0 +1,4 @@
+.vscode
+*.log
+buildroot-2025.02/
+qemu-10.0.3/
