@@ -26,8 +26,7 @@ cd qemu-10.0.3
 
 # Download the modified cpu-exec.c file
 rm -f accel/tcg/cpu-exec.c
-wget https://gist.githubusercontent.com/ubdussamad/fa55885f57397219171a8f30332408be/raw/409365c43e8dc85350573406a476b933c92154d6/10.0.3-cpu-exec-mod.c accel/tcg/cpu-exec.c
-
+mkdir -p accel/tcg && wget -qnc https://gist.githubusercontent.com/ubdussamad/fa55885f57397219171a8f30332408be/raw/409365c43e8dc85350573406a476b933c92154d6/10.0.3-cpu-exec-mod.c -O accel/tcg/cpu-exec.c
 rm -rf accel/tcg/trace-events
 mkdir -p accel/tcg && wget -qO- https://gist.githubusercontent.com/ubdussamad/0bc723df0a88c72a959a25ce0303448/raw/c89681443540beebd74cc8cc8412a2ca5f440d90/10.0.3-trace-events-mod > accel/tcg/trace-events
 
