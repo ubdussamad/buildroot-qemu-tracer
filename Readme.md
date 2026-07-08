@@ -11,6 +11,8 @@ unzip v10.0.3.zip
 # QEMU Build dependencies
 sudo apt install ninja-build python3-sphinx-rtd-theme python3-distlib python3-sphinx libglib2.0-dev libncurses-dev flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev libiberty-dev libcapstone-dev python3-venv
 
+pip install distlib
+
 # Install the official qemu build-dep for good measure
 sudo apt build-dep qemu
 
